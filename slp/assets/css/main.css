@@ -26,6 +26,14 @@ div {
   align-items: center;
 }
 
+.container-slp{
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--pico-spacing);
+  padding-left: var(--pico-spacing);
+}
+
 .divider {
   width: 2.5px;
   height: auto;
