@@ -27,7 +27,7 @@ div {
 }
 
 .container-slp{
-  width: 25%;
+  width: fit-content;
   margin-right: auto;
   margin-left: auto;
   padding-right: var(--pico-spacing);

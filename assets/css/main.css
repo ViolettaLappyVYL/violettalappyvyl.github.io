@@ -31,3 +31,12 @@ div {
   height: auto;
   display: inline-block;
 }
+
+.cell-right {
+  float: right;
+  text-align: right;
+}
+
+.cell-center{
+  text-align: center;
+}
