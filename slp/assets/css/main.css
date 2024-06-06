@@ -39,3 +39,7 @@ div {
   height: auto;
   display: inline-block;
 }
+
+.paragraph-center{
+  text-align: center;
+}
