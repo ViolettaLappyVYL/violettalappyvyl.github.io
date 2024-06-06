@@ -21,6 +21,7 @@
     - [Kurie Compulsion](#kurie-compulsion)
     - [Blue Sky](#blue-sky)
     - [Magnificent Gold](#magnificent-gold)
+    - [Mother Hermit](#mother-hermit)
     - [Kurie Perfect World Result](#kurie-perfect-world-result)
 - [Composer Notes](#composer-notes)
 
@@ -125,6 +126,12 @@ The album features experimentation acoustic electronic hybrid. It's hard to defi
 
 ```
 4:06 - Drop Section
+```
+
+### Mother Hermit
+
+```
+0:00 Intro
 ```
 
 ### Kurie Perfect World Result

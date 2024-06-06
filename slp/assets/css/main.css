@@ -34,6 +34,11 @@ div {
   padding-left: var(--pico-spacing);
 }
 
+.css-img-musicservice{
+  width: 256px;
+  height: 32px;
+}
+
 .divider {
   width: 2.5px;
   height: auto;
