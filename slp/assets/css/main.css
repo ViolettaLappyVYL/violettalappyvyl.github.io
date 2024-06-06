@@ -26,17 +26,11 @@ div {
   align-items: center;
 }
 
-.container-slp{
-  width: fit-content;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--pico-spacing);
-  padding-left: var(--pico-spacing);
-}
-
 .css-img-musicservice{
   width: 256px;
-  height: 32px;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .divider {

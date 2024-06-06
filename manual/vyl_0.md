@@ -3,6 +3,7 @@
 # Table of Contents
 - [Appreciation - VYL 0](#appreciation---vyl-0)
 - [Table of Contents](#table-of-contents)
+- [Image Gallery](#image-gallery)
 - [Summary](#summary)
 - [Links](#links)
 - [DJ Notes](#dj-notes)
@@ -24,6 +25,14 @@
     - [Mother Hermit](#mother-hermit)
     - [Kurie Perfect World Result](#kurie-perfect-world-result)
 - [Composer Notes](#composer-notes)
+
+# Image Gallery
+
+![Alt text](images/grid_placeholder.jpg)
+
+![Alt text](images/grid_placeholder.jpg)
+
+![Alt text](images/grid_placeholder.jpg)
 
 # Summary
 
