@@ -10,18 +10,27 @@ div {
   align-items: center;
 }
 
-.image-center {
-  width: 256px;
-  height: 256px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .list-item {
   display: flex;
   width: 100%;
   line-height: 0.5rem;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.css-container{
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--pico-spacing);
+  padding-left: var(--pico-spacing);
+}
+
+.css-img-album {
+  width: 256px;
+  height: 256px;
   justify-content: space-between;
   align-items: center;
 }
