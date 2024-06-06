@@ -13,6 +13,7 @@ div {
 .image-center {
   width: 256px;
   height: 256px;
+  object-fit: contain;
   justify-content: space-between;
   align-items: center;
 }
@@ -40,3 +41,5 @@ div {
 .cell-center{
   text-align: center;
 }
+
+
