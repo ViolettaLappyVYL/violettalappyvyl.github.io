@@ -20,10 +20,11 @@ div {
 }
 
 .css-container{
-  width: auto;
+  width: 45%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
+  object-fit: contain;
   padding-right: var(--pico-spacing);
   padding-left: var(--pico-spacing);
 }
