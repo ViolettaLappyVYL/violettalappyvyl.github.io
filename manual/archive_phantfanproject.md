@@ -3,7 +3,6 @@
 # Table of Contents
 - [Phant Fan Project](#phant-fan-project)
 - [Table of Contents](#table-of-contents)
-- [Image Gallery](#image-gallery)
 - [Summary](#summary)
 - [Links](#links)
 - [DJ Notes](#dj-notes)
@@ -13,10 +12,7 @@
   - [zts - FreeFlakes (Saito Aitaiyaki "Smooth Jazz" Bootleg)](#zts---freeflakes-saito-aitaiyaki-smooth-jazz-bootleg)
   - [Aran feat yucacco - Aphotic Seeker (Saito Aitaiyaki "Yearning Love" Bootleg)](#aran-feat-yucacco---aphotic-seeker-saito-aitaiyaki-yearning-love-bootleg)
 - [Composer Notes](#composer-notes)
-
-# Image Gallery
-
-![Alt text](images/grid_placeholder.jpg)
+- [Image Gallery](#image-gallery)
 
 # Summary
 
@@ -88,3 +84,9 @@ There are 5 total sections:
 ## Aran feat yucacco - Aphotic Seeker (Saito Aitaiyaki "Yearning Love" Bootleg)
 
 # Composer Notes
+
+
+
+# Image Gallery
+
+![Alt text](images/grid_placeholder.jpg)
