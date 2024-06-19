@@ -53,3 +53,10 @@ div {
 .paragraph-center{
   text-align: center;
 }
+
+.css-background-blur{
+  background-image: url('../images/grid_ninonlyfanproject.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
