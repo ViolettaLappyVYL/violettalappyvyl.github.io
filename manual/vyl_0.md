@@ -167,3 +167,19 @@ Enviromental at the end
 ```
 4:06 - Something
 ```
+
+- Lunatic Love Lullaby - D - Tear-Stained Yesterday 
+
+```
+Tear-Stained Yesterday:
+
+- The term "tear-stained" describes something marked or wet with tears. It suggests emotions, memories, or experiences that have left an indelible mark, much like tear stainson a delicate surface.
+
+- When paired together, "Tear-Stained Yesterday" evokes a poignant image of the past filled with emotional weight, sorrow, and perhaps regret. It implies that the memories of yesterday carry the weight of tears shed.
+
+Holding On to Yesterday:
+
+- The song "Holdin' On to Yesterday" explores the theme of longing for a past love and struggling to move on. The lyrics convey regret and sadness as the narrator clings tomemories and emotions tied to a previous relationship.
+
+- When combined with "Tear-Stained Yesterday," the pairing intensifies the emotional depth. It suggests holding onto memories that are both bittersweet and laden with tears,unable to fully let go.
+```
