@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mpfp Prologue End</title>
+    <title>Hint: adjective+an_object_you_would_cherish_for_eternity</title>
+    <style>
+        body {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .scramble {
+            font-family: monospace;
+            /* Monospaced font works well for this effect */
+        }
+    </style>
+
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-+=<>?_"; // Characters to use for scrambling
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".scramble");
+
+  elements.forEach(element => {
+    const originalText = element.getAttribute("data-text");
+    let interval = null;
+
+    element.addEventListener("mouseover", () => {
+      let iteration = 0;
+      clearInterval(interval); // Clear any existing interval
+
+      interval = setInterval(() => {
+        element.innerText = originalText
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return originalText[index]; // Reveal original character
+            }
+            // Use random characters for the rest of the string
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        // Gradually increase the number of revealed characters
+        if (iteration >= originalText.length) {
+          clearInterval(interval); // Stop the effect once fully revealed
+        }
+        iteration += 1 / 3; // Controls the speed of the reveal
+      }, 30); // Controls the speed of character switching
+    });
+
+    // Reset to original text if mouse leaves before completion
+    element.addEventListener("mouseout", () => {
+      clearInterval(interval);
+      //element.innerText = originalText;
+    });
+  });
+});
+    </script>
+</head>
+
+<body>
+    dtOS
+    <br>
+    Locked!
+    <br>
+
+    <p class="scramble" data-text="> UTOPIA?">Hover over here.</p>
+
+    <br>
+    #START
+    <br>
+    Iteration #0 : REENACTMENT (The Fool) // STATUS: IN-PROGRESS
+    <br>
+    <a href="prologue_end.html" style="color: white; text-decoration: none;">Iteration #1 : ??? / ??? (The Magician)</a>
+    <br>
+    Iteration #2 : STILLNESS / EMPTINESS (The High Priestess)
+    <br>
+    Iteration #3 : ??? (The Empress)
+    <br>
+    Iteration #4 : RENDEZVOUS (The Emperor)
+    <br>
+    Iteration #5 : RELEASE / UPHOLD (The Hierophant)
+    <br>
+    Iteration #6 : REACTION (The Lovers)
+    <br>
+    Iteration #7 : RELIVE / REPURPOSE (The Chariot)
+    <br>
+    Iteration #8 : PRIDE / RESTRAINT (The Strength)
+    <br>
+    Iteration #9 : SOLACE / SOLITUDE (The Hermit)
+    <br>
+    Iteration #10: ??? (Wheel of Fortune)
+    <br>
+    Iteration #11: ??? (The Justice)
+    <br>
+    Iteration #12: REPOSE / MIRROR (The Hanged Man)
+    <br>
+    Iteration #13: RENEWAL (The Death)
+    <br>
+    Iteration #14: ??? (The Temperance)
+    <br>
+    Iteration #15: ??? (The Devil)
+    <br>
+    Iteration #16: ??? (The Tower)
+    <br>
+    Iteration #17: SHADOW / RADIANCE / ??????? (The Star)
+    <br>
+    Iteration #18: DARK / AGONY / REFRACTION (The Moon)
+    <br>
+    Iteration #19: BRIGHT / IMPASSTIVITY / REVIVAL (The Sun)
+    <br>
+    Iteration #20: RESOLUTION (The Judgement)
+    <br>
+    Iteration #21: REWIND / ????? / ??????? (The World)
+    <br>
+    #END
+    <br>
+
+    <br>
+    What world will you and me live in?
+
+    <div class="row">
+        <div class="column">
+            <br>
+            <p class="scramble" data-text="?????? - ??? >ZERFALL?">?????? - ???</p>
+            Not Available.
+        </div>
+        <div class="column">
+            <br>
+            <p class="scramble" data-text="???? - ??? >TRUTH?">???? - ???</p>
+            Not Available.
+        </div>
+        <div class="column">
+            <br>
+            <p class="scramble" data-text="DummyTexas - Reenactment Question Arc Session (zts Remix + Extras) >LIES?">DummyTexas - Reenactment Question Arc Session (zts Remix + Extras)</p>
+            <audio controls loop>
+                <source src="audio/Yunyun Syndrome Rhythm Psychosis OST Qtie Bedroom (128kbit_AAC).ogg"
+                    type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -11,23 +11,87 @@
             background-color: darkblue;
             color: white;
         }
+
+        .column {
+            float: left;
+            width: 30%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .scramble {
+            font-family: monospace;
+            /* Monospaced font works well for this effect */
+        }
     </style>
+
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-+=<>?_"; // Characters to use for scrambling
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".scramble");
+
+  elements.forEach(element => {
+    const originalText = element.getAttribute("data-text");
+    let interval = null;
+
+    element.addEventListener("mouseover", () => {
+      let iteration = 0;
+      clearInterval(interval); // Clear any existing interval
+
+      interval = setInterval(() => {
+        element.innerText = originalText
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return originalText[index]; // Reveal original character
+            }
+            // Use random characters for the rest of the string
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        // Gradually increase the number of revealed characters
+        if (iteration >= originalText.length) {
+          clearInterval(interval); // Stop the effect once fully revealed
+        }
+        iteration += 1 / 3; // Controls the speed of the reveal
+      }, 30); // Controls the speed of character switching
+    });
+
+    // Reset to original text if mouse leaves before completion
+    element.addEventListener("mouseout", () => {
+      clearInterval(interval);
+      //element.innerText = originalText;
+    });
+  });
+});
+    </script>
 </head>
 
 <body>
-    dtOS by Arcana Corporation:
+    dtOS
+    <br>
+    by Arcana Corporation:
     <br>
     <a href="https://archive.org/details/modern-phant-fan-project-mpfp" style="color: cyan;">
         https://archive.org/details/modern-phant-fan-project-mpfp
     </a>
     <br>
 
+    <p class="scramble" data-text="> UTOPIA?">Hover over here.</p>
+
     <br>
     #START
     <br>
     Iteration #0 : REENACTMENT (The Fool) // STATUS: IN-PROGRESS
     <br>
-    Iteration #1 : ??? (The Magician)
+    Iteration #1 : TRUTH / LIES (The Magician)
     <br>
     Iteration #2 : STILLNESS / EMPTINESS (The High Priestess)
     <br>
@@ -41,7 +105,7 @@
     <br>
     Iteration #7 : RELIVE / REPURPOSE (The Chariot)
     <br>
-    Iteration #8 : RESTRAINT (The Strength)
+    Iteration #8 : PRIDE / RESTRAINT (The Strength)
     <br>
     Iteration #9 : SOLACE / SOLITUDE (The Hermit)
     <br>
@@ -59,7 +123,7 @@
     <br>
     Iteration #16: ??? (The Tower)
     <br>
-    Iteration #17: SHADOW / RADIANCE (The Star)
+    Iteration #17: SHADOW / RADIANCE / ??????? (The Star)
     <br>
     Iteration #18: DARK / AGONY / REFRACTION (The Moon)
     <br>
@@ -67,7 +131,7 @@
     <br>
     Iteration #20: RESOLUTION (The Judgement)
     <br>
-    Iteration #21: REWIND / RESET (The World)
+    Iteration #21: REWIND / ????? / ??????? (The World)
     <br>
     #END
     <br>
@@ -83,47 +147,51 @@
     <br>
     What world will you and me live in?
 
-    <br>
-    Taishi - ???
-    <br>
-    <button>Play</button>
-    <button>Pause</button>
-    <br>
+    <div class="row">
+        <div class="column">
+            <br>
+            <p class="scramble" data-text="Taishi - ??? >ZERFALL?">Taishi - ???</p>
+            <audio controls loop>
+                <source src="audio/Yunyun Syndrome Rhythm Psychosis OST Qtie Bedroom (128kbit_AAC).ogg"
+                    type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="column">
+            <br>
+            <p class="scramble" data-text="???? - ??? >REIMAGE?">???? - ???</p>
+            <audio controls loop>
+                <source src="audio/Yunyun Syndrome Rhythm Psychosis OST Qtie Bedroom (128kbit_AAC).ogg"
+                    type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="column">
+            <br>
+            <p class="scramble" data-text="DummyTexas - Reenactment Question Arc Session (zts Remix + Extras) >NEUTRAL?">DummyTexas - Reenactment Question Arc Session (zts Remix + Extras)</p>
+            <audio controls loop>
+                <source src="audio/Yunyun Syndrome Rhythm Psychosis OST Qtie Bedroom (128kbit_AAC).ogg"
+                    type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
 
-    <br>
-    ???? - ???
-    <br>
-    <button>Play</button>
-    <button>Pause</button>
-    <br>
-
-    <br>
-    DummyTexas - Reenactment Question Arc Session (zts Remix + Extra)
-    <br>
-    0:00 zts - freeflakes (Reenactment Question Remix)
-    <br>
-    4:00 Questioning You (Demo Mix)
-    <br>
-    4:00 DEVOTION LOVER (Demo Mix)
-    <br>
-    4:00 A Life Worth Rebirth (Demo Mix)
-    <br>
-    <button>Play</button>
-    <button>Pause</button>
     <br>
 
     <br>
 
     <a>Advertisement Ad (Remember to fix this website, Hadaly!)</a>
     <br>
+    <br>
     <a href="https://compllege.tumblr.com/">
-        <img src="images/banner_coad.jpg"/>
+        <img src="images/banner_coad.jpg" />
     </a>
     <a href="https://violettalappyvyl.github.io/">
-        <img src="images/banner_coad.jpg"/>
+        <img src="images/banner_coad.jpg" />
     </a>
     <a href="https://violettalappyvyl.github.io/">
-        <img src="images/banner_coad.jpg"/>
+        <img src="images/banner_coad.jpg" />
     </a>
 
     <br>
@@ -177,8 +245,7 @@
     <br>
     <br>
     <br>
-    The one you love the most for an eternity?
-    <br>
+    <p class="scramble" data-text="The one you love the most for all eternity?">Teh one oyu velo eth mtso orf all ityren?et</p>
     <input type="text" id="username" name="username">
     <button>Enter</button>
     <br>
