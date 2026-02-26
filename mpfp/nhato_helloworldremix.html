@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: red;
+            color: yellow;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .scramble {
+            font-family: monospace;
+            /* Monospaced font works well for this effect */
+        }
+    </style>
+
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-+=<>?_"; // Characters to use for scrambling
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".scramble");
+
+  elements.forEach(element => {
+    const originalText = element.getAttribute("data-text");
+    let interval = null;
+
+    element.addEventListener("mouseover", () => {
+      let iteration = 0;
+      clearInterval(interval); // Clear any existing interval
+
+      interval = setInterval(() => {
+        element.innerText = originalText
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return originalText[index]; // Reveal original character
+            }
+            // Use random characters for the rest of the string
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        // Gradually increase the number of revealed characters
+        if (iteration >= originalText.length) {
+          clearInterval(interval); // Stop the effect once fully revealed
+        }
+        iteration += 1 / 3; // Controls the speed of the reveal
+      }, 30); // Controls the speed of character switching
+    });
+
+    // Reset to original text if mouse leaves before completion
+    element.addEventListener("mouseout", () => {
+      clearInterval(interval);
+      //element.innerText = originalText;
+    });
+  });
+});
+    </script>
+</head>
+
+<body>
+    UM2S BIOS: System Failure!!
+    <br>
+    <p>Do yoU Want To RetrY? y/n|</p>
+    <input type="text" id="username" name="username">
+    <button>Submit</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Duplicated file detected. 3.5th BVE created in um2s/system/bve</p>
+</body>
+
+</html>
